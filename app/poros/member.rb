@@ -3,7 +3,8 @@ class Member
               :name,
               :allies,
               :enemies,
-              :affiliation
+              :affiliation,
+              :photo
 
   def initialize(member_data)
     @id = member_data[:_id]
@@ -11,5 +12,6 @@ class Member
     @allies = member_data[:allies].to_sentence
     @enemies = member_data[:enemies].to_sentence
     @affiliation = member_data[:affiliation]
+    @photo = member_data[:photoUrl]
   end
 end
