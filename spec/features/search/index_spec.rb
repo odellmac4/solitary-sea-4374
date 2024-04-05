@@ -1,7 +1,7 @@
 require 'rails_helper'
 
 RSpec.describe 'Search index page' do
-  describe 'User story 1' do
+  describe 'User story 1', :vcr do
     it 'displays total number of people in selected nation along with attributes' do
       # As a user,
       # When I visit "/"

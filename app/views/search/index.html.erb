@@ -1,0 +1,11 @@
+<h1><%=@facade.nation_member_count%> Members</h1>
+<section class="members">
+  <%@facade.nation_members.each do |member|%>
+    <div class="member">
+      <p class="name">Name: <%=member.name%></p>
+      <p class="allies">Allies: <%=member.allies%></p>
+      <p class="enemies">Enemies: <%=member.enemies%></p>
+      <p class="affiliations">Affiliation: <%=member.affiliation%></p>
+    </div>
+  <%end%>
+</section>
